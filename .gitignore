@@ -1,2 +1,8 @@
 # build
 build
+
+# project files
+proj.*
+
+# cocos
+cocos2d

@@ -48,10 +48,44 @@ endif()
 
 # add cross-platforms source files and header files 
 list(APPEND GAME_SOURCE
-
+     Classes/AppDelegate.cpp
+     Classes/models/CardModel.cpp
+     Classes/models/PlayFieldModel.cpp
+     Classes/models/StackModel.cpp
+     Classes/scenes/MenuScene.cpp
+     Classes/scenes/GameScene.cpp
+     Classes/views/MenuView.cpp
+     Classes/views/GameView.cpp
+     Classes/views/CardView.cpp
+     Classes/views/PlayFieldView.cpp
+     Classes/views/StackView.cpp
+     Classes/controllers/GameController.cpp
+     Classes/controllers/PlayFieldController.cpp
+     Classes/controllers/StackController.cpp
+     Classes/utils/JsonUtils.cpp
+     Classes/services/SceneRouter.cpp
+     Classes/configs/loaders/LevelConfigLoader.cpp
      )
 list(APPEND GAME_HEADER
-
+     Classes/AppDelegate.h
+     Classes/models/CardModel.h
+     Classes/models/PlayFieldModel.h
+     Classes/models/StackModel.h
+     Classes/scenes/MenuScene.h
+     Classes/scenes/GameScene.h
+     Classes/views/MenuView.h
+     Classes/views/GameView.h
+     Classes/views/CardView.h
+     Classes/views/PlayFieldView.h
+     Classes/views/StackView.h
+     Classes/views/LayoutConstants.h
+     Classes/controllers/GameController.h
+     Classes/controllers/PlayFieldController.h
+     Classes/controllers/StackController.h
+     Classes/utils/JsonUtils.h
+     Classes/utils/PathUtils.h
+     Classes/services/SceneRouter.h
+     Classes/configs/loaders/LevelConfigLoader.h
      )
 
 if(ANDROID)
